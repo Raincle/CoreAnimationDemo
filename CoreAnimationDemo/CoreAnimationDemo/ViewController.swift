@@ -21,11 +21,12 @@ class ViewController: UIViewController {
         block.layer.shadowOffset = CGSizeMake(2, 2)
         block.layer.shadowOpacity = 0.8
         block.layer.shadowRadius = 3
+//        block.layer.masksToBounds = true
         block.layer.shadowColor = UIColor.greenColor().CGColor
         
         let animationR = CABasicAnimation(keyPath: "cornerRadius")
         animationR.fromValue = block.layer.cornerRadius
-        animationR.toValue = 25
+        animationR.toValue = block.layer.frame.size.height/2
         animationR.autoreverses = true
         animationR.repeatCount = HUGE
         animationR.duration = 1
