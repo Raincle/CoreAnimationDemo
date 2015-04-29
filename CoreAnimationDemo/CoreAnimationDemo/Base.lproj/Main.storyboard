@@ -15,12 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-tz-pr1">
+                                <rect key="frame" x="130" y="254" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="40r-uJ-0nK"/>
+                                    <constraint firstAttribute="width" constant="60" id="9gM-cJ-swR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="o5M-tz-pr1" secondAttribute="centerX" id="Imz-rH-6Yi"/>
+                            <constraint firstAttribute="centerY" secondItem="o5M-tz-pr1" secondAttribute="centerY" id="jxQ-8h-uqK"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="block" destination="o5M-tz-pr1" id="uaR-uO-VeY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="453" y="327"/>
         </scene>
     </scenes>
 </document>
